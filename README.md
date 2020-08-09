@@ -2,7 +2,7 @@
 
 _English_
 
-A simple but functional web address book.
+A simple but functional web address book with animated components which enhances the user experience.
 
 Tools Used: **Vue.js, HTML, CSS, JavaScript, Node.js, Express.js, MongoDB**
 
@@ -12,7 +12,7 @@ The app is functional and online: https://my-web-address-book.herokuapp.com
 
 _Croatian_
 
-Jednostavan, ali funkcionalan web adresar.
+Jednostavan, ali funkcionalan web adresar s animiranim komponentama što poboljšava korisničko iskustvo.
 
 Korišteni alati: **Vue.js, HTML, CSS, JavaScript, Node.js, Express.js, MongoDB**
 
