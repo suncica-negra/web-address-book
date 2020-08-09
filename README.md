@@ -46,6 +46,8 @@ The form is validated with the "vuelidate". The "register" button cannot be clic
 
 ## SVI MOJI KONTAKTI / all my contacts
 
+Only fields with entered data are displayed. Fields that are empty are not displayed.
+
 ![alt text](https://github.com/suncica-negra/web-address-book/blob/master/SLIKE/7.PNG)
 
 ## PRETRAGA PO IMENU / search by first name
