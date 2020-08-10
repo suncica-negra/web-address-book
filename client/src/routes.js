@@ -2,12 +2,22 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from "./components/Home.vue";
-import Contacts from "./components/Contacts.vue";
-import NewContact from "./components/NewContact.vue";
-import Register from "./components/Register.vue";
 import Login from "./components/Login.vue";
-import Profile from "./components/Profile.vue";
-import EditContact from "./components/EditContact.vue";
+
+const Register = () =>
+  import ( /* webpackChunkName: "Register" */ "./components/Register.vue");
+
+const Contacts = () =>
+  import ( /* webpackPrefetch: true, webpackChunkName: "Contacts" */ "./components/Contacts.vue");
+
+const NewContact = () =>
+  import ( /* webpackChunkName: "NewContact" */ "./components/NewContact.vue");
+
+const EditContact = () =>
+  import ( /* webpackChunkName: "EditContact" */ "./components/EditContact.vue");
+
+const Profile = () =>
+  import ( /* webpackChunkName: "Profile" */ "./components/Profile.vue");
 
 Vue.use(VueRouter)
 
@@ -88,6 +98,10 @@ export const routes = [{
         next('/login')
       }
     }
+  },
+  {
+    path: "*",
+    redirect: "/"
   }
 ];
 
