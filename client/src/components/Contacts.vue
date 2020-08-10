@@ -56,7 +56,7 @@
                   <button class="btn btn-outline-danger" @click="handleClick(contact._id)">Delete Contact</button>
                   <br><br>
                   <transition name="fade" mode="out-in">
-                     <button class="alert alert-danger" @click="deleteContact(contact._id)" v-if="selectedItem === contact._id">
+                     <button class="btn btn-outline-danger alert alert-danger" @click="deleteContact(contact._id)" v-if="selectedItem === contact._id">
                      Sure? You cannot restore a contact, just enter a new one. If sure click here.
                      </button>
                   </transition>
